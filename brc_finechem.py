@@ -24,7 +24,6 @@ def is_target(line, pattern):
 
 def parse_page(page):
     buf = StringIO.StringIO(page)
-    index = 0
     chem_cat = 'class="category-banner"'
     chem_des = 'class="note-msg"'
     page_div = '<div'
@@ -33,19 +32,18 @@ def parse_page(page):
     div_parse = False
     
     for line in buf:
-        if (is_target(line, page_div)):
-            div_count += 1
+        if (True == div_parse):
+            if (is_target(line, page_div)):
+                div_count += 1
+            print re.sub('\n', '', remove_html_tags(line))
+        if (is_target(line, page_undiv)):
+            if (div_count > 0):
+                div_count -= 1
+            else:
+                div_parse = False
         if (is_target(line, chem_cat) or is_target(line, chem_des)):
             div_parse = True
-            print index
-            print line
-        if (is_target(line, page_undiv)):
-            div_count -= 1
-        if (True == div_parse and 0 == div_count):
-            return
-        index += 1
-#        if (to_print and has_alphanumeric(line)):
-#            print re.sub('\n', '', line)
+            print "tag" 
 
 def main():
     url_list = read_url_list()
