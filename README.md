@@ -1,6 +1,7 @@
 This is a readme file for the chem_vendor_script
 
-The script works by just running itself.
+UNIX: The script works by just running itself. ( Give executing permissions on your system. "$> chmod +x" )
+
 It will read EVERY link in the [url_list.txt] file. These links have been handpicked and checked their response beforehand.
 
 The script will generate an output format of the technical info on each web page into the [brc_output.txt]
