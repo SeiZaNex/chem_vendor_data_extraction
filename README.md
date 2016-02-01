@@ -19,14 +19,21 @@ More information on applying can be found in the Rare Chemical Section FAQ
 Current Rare Chemicals
 
 INTERMEDIATE
+
 4-Fluoro-Methylphenidate
+
 5-MeO-DIBF Powder
 
 ADVANCED
+
 Clonazolam (Coming Soon)
+
 Diclazepam Powder
+
 DeschloroEtizolam Powder
+
 Flubromazepam Powder
+
 Pyrazolam Powder
 
 
